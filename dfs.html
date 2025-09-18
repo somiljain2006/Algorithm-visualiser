@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFS</title>
+</head>
+<body>
+    <div>
+        <pre>
+            void dfs(int u, vector<bool> &visited) {
+                visited[u] = true;<br>
+                cout << u << " ";<br>
+                list<int> neighbours = l[u];<br>
+                for(int v : neighbours) {<br>
+                    if(!visited[v]) {<br>
+                        dfs(v, visited);<br>
+                    }<br>
+                }<br>
+            }
+        </pre>
+    </div>
+</body>
+</html>

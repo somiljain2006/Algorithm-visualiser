@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS</title>
+</head>
+<body>
+        <div>
+        <pre>
+            void bfs(){<br>
+                queue<int> q;<br>
+                vector<bool> visited(v, false);<br>
+                q.push(0);<br>
+                visited[0] = true;<br>
+                while(!q.empty()){<br>
+                    int u = q.front();<br>
+                    q.pop();<br>
+                    cout << u << " ";<br>
+                    list<int> neighbours = l[u];<br>
+                    for(int v : neighbours){<br>
+                        if(!visited[v]){<br>
+                            visited[v] = true;<br>
+                            q.push(v);<br>
+                        }<br>
+                    }<br>
+                }<br>
+                cout << endl;<br>
+            }
+        </pre>
+    </div>
+</body>
+</html>
