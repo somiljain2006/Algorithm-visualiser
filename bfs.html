@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BFS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div>
-        <pre>
-            void bfs(){<br>
-                queue<int> q;<br>
-                vector<bool> visited(v, false);<br>
-                q.push(0);<br>
-                visited[0] = true;<br>
-                while(!q.empty()){<br>
-                    int u = q.front();<br>
-                    q.pop();<br>
-                    cout << u << " ";<br>
-                    list<int> neighbours = l[u];<br>
-                    for(int v : neighbours){<br>
-                        if(!visited[v]){<br>
-                            visited[v] = true;<br>
-                            q.push(v);<br>
-                        }<br>
-                    }<br>
-                }<br>
-                cout << endl;<br>
+    <pre class = "code-shift">
+        void bfs(){
+            queue<int> q;
+            vector<bool> visited(v, false);
+            q.push(0);
+            visited[0] = true;
+            while(!q.empty()){
+                int u = q.front();
+                q.pop();
+                cout << u << " ";
+                list<int> neighbours = l[u];
+                for(int v : neighbours){
+                    if(!visited[v]){
+                        visited[v] = true;
+                        q.push(v);
+                    }
+                }
             }
-        </pre>
-    </div>
+            cout << endl;
+        }
+    </pre>
 </body>
 </html>
