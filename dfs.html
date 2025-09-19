@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <pre class = "code-shift">
+    <pre class = "code-shift" id = "dfs">
         void dfs(int u, vector<bool> &visited) {
-            visited[u] = true;<br>
-            cout << u << " ";<br>
-            list<int> neighbours = l[u];<br>
-            for(int v : neighbours) {<br>
-                if(!visited[v]) {<br>
-                    dfs(v, visited);<br>
-                }<br>
-            }<br>
+            visited[u] = true;
+            cout << u << " ";
+            list&lt;int&gt; neighbours = l[u];
+            for(int v : neighbours) {
+                if(!visited[v]) {
+                    dfs(v, visited);
+                }
+            }
         }
     </pre>
+    <canvas id="circle-1"></canvas>
+    <canvas id="circle-2"></canvas>
+    <canvas id="circle-3"></canvas>
+    <canvas id="circle-4"></canvas>
+    <canvas id="circle-5"></canvas>
+    <canvas id="circle-6"></canvas>
+    <canvas id="circle-7"></canvas>
+    <script src="dfs.js"></script>
 </body>
 </html>

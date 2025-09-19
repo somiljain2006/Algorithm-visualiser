@@ -3,3 +3,119 @@
     padding-top: 100px;
     font-size: 25px;
 }
+
+#dfs{
+    padding-top: 150px;
+}
+
+#circle-1 {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -450px;
+    left: 230px;
+}
+
+#circle-2{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -345px;
+    left: -75px;
+}
+
+#circle-3{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -345px;
+    left: -90px;
+}
+
+#circle-4{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -230px;
+    left: -570px;
+}
+
+#circle-5{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -230px;
+    left: -630px;
+}
+
+#circle-6{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -230px;
+    left: -760px;
+}
+
+#circle-7{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -230px;
+    left: -820px;
+}
+
+#circle-a {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -650px;
+    left: 230px;
+}
+
+#circle-b{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -550px;
+    left: -75px;
+}
+
+#circle-c{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -550px;
+    left: -90px;
+}
+
+#circle-d{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -440px;
+    left: -570px;
+}
+
+#circle-e{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -440px;
+    left: -630px;
+}
+
+#circle-f{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -440px;
+    left: -760px;
+}
+
+#circle-g{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -440px;
+    left: -820px;
+}
