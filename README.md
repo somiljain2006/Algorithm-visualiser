@@ -7,3 +7,4 @@ https://www.w3schools.com/html/html_entities.asp<br>
 https://www.w3schools.com/html/html5_canvas.asp<br>
 https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D<br>
 https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline<br>
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/font<br>
