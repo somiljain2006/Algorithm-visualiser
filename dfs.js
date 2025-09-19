@@ -162,6 +162,7 @@ function fill_circ(id, txt) {
                 opa += sec;
                 requestAnimationFrame(color);
             } else {
+                setTimeout(resolve, 50);
                 resolve();
             }
         }
@@ -184,18 +185,35 @@ function animline(className, speed) {
             setTimeout(() => {
                 all[i].style.color = "blue";
                 if (i === all.length - 1){
-                    resolve();
+                    setTimeout(resolve, speed);
                 }
             }, i * speed);
         }
     });
 }
 
-
 function print(val) {
     return new Promise((resolve) => {
         const cout = document.getElementsByClassName("output")[0];
         cout.textContent = "Output: " + val;
+        resolve();
+    });
+}
+
+function reset() {
+    return new Promise((resolve) => {
+        let spans = document.querySelectorAll("#dfs span");
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].style.color = "black";
+        }
+        setTimeout(resolve, 50); 
+    });
+}
+
+function added(val){
+    return new Promise((resolve) => {
+        let out = document.getElementsByClassName("output")[0];
+        out.textContent += "," + " " + val;
         resolve();
     });
 }
@@ -209,16 +227,87 @@ document.querySelector('.submit').addEventListener('click', async function() {
         fill('circle-' + i, val);
         clr.value = "";
     }
-    await animline('a', 50);
+    await animline('a', 100);
     await animline('b', 100);
     await fill_circ('circle-1', nums[0]);
     await animline('c', 100);
     await print(nums[0]);
-    await animline('d', 50);
-    await animline('e', 50);
-    await animline('f', 50);
-    await animline('g', 50);
-    await animline('h', 50);
-    await animline('i', 50);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-2', nums[1]);
+    await animline('c', 100);
+    await added(nums[1]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-4', nums[3]);
+    await animline('c', 100);
+    await added(nums[3]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-5', nums[4]);
+    await animline('c', 100);
+    await added(nums[4]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-3', nums[2]);
+    await animline('c', 100);
+    await added(nums[2]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-6', nums[5]);
+    await animline('c', 100);
+    await added(nums[5]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
+    await reset();
+    await animline('a', 100);
+    await animline('b', 100);
+    await fill_circ('circle-7', nums[6]);
+    await animline('c', 100);
+    await added(nums[6]);
+    await animline('d', 100);
+    await animline('e', 100);
+    await animline('f', 100);
+    await animline('g', 100);
+    await animline('h1', 100);
+    await animline('i1', 100);
 });
-
