@@ -177,3 +177,15 @@
 .text input {
     text-align: center; 
 }
+
+.a {
+  color: black;        
+}
+
+.output {
+    position: relative;         
+    top: -1100px;       
+    left: 400px;
+    font-weight: 550;
+    font-size: 50px;
+}

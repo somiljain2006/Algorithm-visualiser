@@ -134,13 +134,91 @@ function fill(ID, text) {
     ctx.font = "20px Arial";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.fillText(text, 93, 50);  
+    ctx.fillText(text, 95, 50);  
 }
-document.querySelector('.submit').addEventListener('click', function() {
+
+function fill_circ(id, txt) {
+    return new Promise((resolve) => {
+        let c = document.getElementById(id);
+        let ctx = c.getContext("2d");
+        let r = 40, x = 95, y = 50;
+        let opa = 0, sec = 0.02;   
+        let x1 = 95, x2 = 50;
+        function color() {
+            ctx.clearRect(0, 0, c.width, c.height);
+            ctx.fillStyle = `rgba(255, 165, 0, ${opa})`;
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.font = "20px Arial";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillStyle = "black";
+            ctx.fillText(txt, x1, x2);
+            if (opa < 1) {
+                opa += sec;
+                requestAnimationFrame(color);
+            } else {
+                resolve();
+            }
+        }
+        color();
+    });
+}
+
+function animline(className, speed) {
+    return new Promise((resolve) => {
+        let line = document.querySelector(`.${className}`);
+        let txt = line.textContent;
+        line.textContent = "";
+        for (let i = 0; i < txt.length; i++) {
+            let alt = document.createElement("span");
+            alt.textContent = txt[i];
+            line.appendChild(alt);
+        }
+        let all = line.querySelectorAll("span");
+        for (let i = 0; i < all.length; i++) {
+            setTimeout(() => {
+                all[i].style.color = "blue";
+                if (i === all.length - 1){
+                    resolve();
+                }
+            }, i * speed);
+        }
+    });
+}
+
+
+function print(val) {
+    return new Promise((resolve) => {
+        const cout = document.getElementsByClassName("output")[0];
+        cout.textContent = "Output: " + val;
+        resolve();
+    });
+}
+
+document.querySelector('.submit').addEventListener('click', async function() {
+    let nums = [];
     for(let i = 1; i <= 7; i++) {
         let clr = document.getElementById('val' + i);
         let val = document.getElementById('val' + i).value;
+        nums.push(val); 
         fill('circle-' + i, val);
         clr.value = "";
     }
+    await animline('a', 50);
+    await animline('b', 100);
+    await fill_circ('circle-1', nums[0]);
+    await animline('c', 100);
+    await print(nums[0]);
+    await animline('d', 50);
+    await animline('e', 50);
+    await animline('f', 50);
+    await animline('g', 50);
+    await animline('h', 50);
+    await animline('i', 50);
 });
+
