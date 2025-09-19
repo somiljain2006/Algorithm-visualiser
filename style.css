@@ -119,3 +119,39 @@
     top: -440px;
     left: -820px;
 }
+
+#line-1{
+    position: relative;
+    top: -555px;
+    left: 73px;
+}
+
+#line-2{
+    position: relative;
+    top: -550px;
+    left: -230px;
+}
+
+#line-3{
+    position: relative;
+    top: -968px;
+    left: 148px;
+}
+
+#line-4{
+    position: relative;
+    top: -965px;
+    left: -310px;
+}
+
+#line-5{
+    position: relative;
+    top: -1157px;
+    left: 85px;
+}
+
+#line-6{
+    position: relative;
+    top: -1160px;
+    left: -225px;
+}
