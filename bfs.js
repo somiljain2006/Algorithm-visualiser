@@ -238,113 +238,113 @@ document.querySelector('.submit').addEventListener('click', async function() {
     }
     
     //node 1
-    await animline('aa', 100);
-    await animline('bb', 100);
-    await animline('cc', 100);
-    await animline('dd', 100);
+    await animline('aa', 20);
+    await animline('bb', 20);
+    await animline('cc', 20);
+    await animline('dd', 20);
     await animline('ee', 100);
     await fill_circ('circle-1', nums[0]);
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await print(nums[0]);
 
     //node-2
     await animline('ii', 100);
-    await animline('jj', 100);
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('jj', 20);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-2', nums[1]);
-    await animline('mm', 100);
-    await animline('nn', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
     await reset1();
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-3', nums[2]);
-    await animline('mm', 100);
-    await animline('nn', 100);
-    await animline('oo', 100);
-    await animline('pp', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
+    await animline('oo', 20);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[1]);
 
     //node 3
     await animline('ii', 100);
-    await animline('jj', 100);
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('jj', 20);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-4', nums[3]);
-    await animline('mm', 100);
-    await animline('nn', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
     await reset1();
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-5', nums[4]);
-    await animline('mm', 100);
-    await animline('nn', 100);
-    await animline('oo', 100);
-    await animline('pp', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
+    await animline('oo', 20);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[2]);
 
     //node4
     await animline('ii', 100);
-    await animline('jj', 100);
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('jj', 20);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-6', nums[5]);
-    await animline('mm', 100);
-    await animline('nn', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
     await reset1();
-    await animline('kk', 100);
-    await animline('ll', 100);
+    await animline('kk', 20);
+    await animline('ll', 20);
     await fill_circ('circle-7', nums[6]);
-    await animline('mm', 100);
-    await animline('nn', 100);
-    await animline('oo', 100);
-    await animline('pp', 100);
+    await animline('mm', 20);
+    await animline('nn', 20);
+    await animline('oo', 20);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[3]);
 
     //node5
     await animline('ii', 100);
-    await animline('pp', 100);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[4]);
 
     //node 6
     await animline('ii', 100);
-    await animline('pp', 100);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[5]);
 
     //node 7
     await animline('ii', 100);
-    await animline('pp', 100);
+    await animline('pp', 20);
     await reset2();
-    await animline('ff', 100);
-    await animline('gg', 100);
-    await animline('hh', 100);
+    await animline('ff', 20);
+    await animline('gg', 20);
+    await animline('hh', 20);
     await added(nums[6]);
 
     await animline('ii', 100);
-    await animline('pp', 100);
-    await animline('qq', 100);
-    await animline('rr', 100);
-    await animline('ss', 100);
+    await animline('pp', 20);
+    await animline('qq', 20);
+    await animline('rr', 20);
+    await animline('ss', 20);
 });

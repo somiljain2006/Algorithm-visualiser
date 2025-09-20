@@ -1,3 +1,27 @@
+.home{
+    background-image: url("https://media.geeksforgeeks.org/wp-content/cdn-uploads/Competitive-Programming-1.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 70px;
+    text-align: center;
+    font-family: "Asimovian";
+}
+
+.df_head{
+    padding-left: 550px;
+    font-size: 50px;
+    font-family: "Asimovian";
+}
+
+.depth{
+    background-color: cyan;
+}
+
+h1{
+    font-weight: 400;
+    font-size: xx-large;
+}
+
 .code-shift{
     padding-left: 750px;
     padding-top: 50px;
@@ -172,6 +196,9 @@
     position: relative;
     top: -1130px;
     left: 255px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color:chocolate;
 }
 
 .text input {
@@ -180,8 +207,36 @@
 
 .output {
     position: relative;         
-    top: -1100px;       
+    top: -1120px;       
     left: 400px;
     font-weight: 550;
     font-size: 50px;
+}
+
+.bf_head{
+    padding-left: 160px;
+    font-size: 45px;
+    font-family: "Asimovian";
+}
+
+.x1{
+    margin-top: 630px;
+    margin-right: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:darkorange;
+    font-size: 20px;
+    font-family: "Asimovian";
+}
+
+.x2{
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:darkorange;
+    font-size: 20px;
+    font-family: "Asimovian";
 }
