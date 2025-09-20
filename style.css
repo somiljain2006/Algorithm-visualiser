@@ -1,6 +1,6 @@
 .code-shift{
     padding-left: 750px;
-    padding-top: 100px;
+    padding-top: 50px;
     font-size: 25px;
 }
 
@@ -176,10 +176,6 @@
 
 .text input {
     text-align: center; 
-}
-
-.a {
-  color: black;        
 }
 
 .output {

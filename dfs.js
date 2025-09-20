@@ -213,7 +213,7 @@ function reset() {
 function added(val){
     return new Promise((resolve) => {
         let out = document.getElementsByClassName("output")[0];
-        out.textContent += "," + " " + val;
+        out.textContent += " " + val;
         resolve();
     });
 }
@@ -257,10 +257,7 @@ document.querySelector('.submit').addEventListener('click', async function() {
     await animline('c', 100);
     await added(nums[3]);
     await animline('d', 100);
-    await animline('e', 100);
-    await animline('f', 100);
-    await animline('g', 100);
-    await animline('h1', 100);
+    await animline('j1', 100);
     await animline('i1', 100);
     await reset();
     await animline('a', 100);
@@ -269,10 +266,7 @@ document.querySelector('.submit').addEventListener('click', async function() {
     await animline('c', 100);
     await added(nums[4]);
     await animline('d', 100);
-    await animline('e', 100);
-    await animline('f', 100);
-    await animline('g', 100);
-    await animline('h1', 100);
+    await animline('j1', 100);
     await animline('i1', 100);
     await reset();
     await animline('a', 100);
@@ -285,6 +279,7 @@ document.querySelector('.submit').addEventListener('click', async function() {
     await animline('f', 100);
     await animline('g', 100);
     await animline('h1', 100);
+    await animline('j1', 100);
     await animline('i1', 100);
     await reset();
     await animline('a', 100);
@@ -293,10 +288,7 @@ document.querySelector('.submit').addEventListener('click', async function() {
     await animline('c', 100);
     await added(nums[5]);
     await animline('d', 100);
-    await animline('e', 100);
-    await animline('f', 100);
-    await animline('g', 100);
-    await animline('h1', 100);
+    await animline('j1', 100);
     await animline('i1', 100);
     await reset();
     await animline('a', 100);
@@ -305,9 +297,6 @@ document.querySelector('.submit').addEventListener('click', async function() {
     await animline('c', 100);
     await added(nums[6]);
     await animline('d', 100);
-    await animline('e', 100);
-    await animline('f', 100);
-    await animline('g', 100);
-    await animline('h1', 100);
+    await animline('j1', 100);
     await animline('i1', 100);
 });
